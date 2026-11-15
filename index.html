@@ -6,17 +6,20 @@
 <meta name="description" content="Ashraf Scissors Hands Salon & Academy - Premium hair, beauty & grooming in Pune & Mumbai.">
 <title>Ashraf Scissors Hands Salon | Pune & Mumbai</title>
 
+<!-- RESOURCE HINTS FOR SPEED -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://github.com">
 <link rel="preconnect" href="https://raw.githubusercontent.com">
+<link rel="preconnect" href="https://ik.imagekit.io">
 <link rel="dns-prefetch" href="https://i.pinimg.com">
 <link rel="dns-prefetch" href="https://images.unsplash.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <!-- PRELOAD CRITICAL LCP IMAGES -->
-<link rel="preload" as="image" href="https://github.com/Growftofficial/Ashraf-s-Salon-Website/blob/main/1770pc.png?raw=true">
-<link rel="preload" as="image" href="https://github.com/roservicexpertcom-prog/website/blob/main/Luxury%20Salon%20Services%20Banner%20(1).png?raw=true" media="(min-width: 768px)">
+<link rel="preload" as="image" href="https://github.com/Growftofficial/Ashraf-s-Salon-Website/blob/main/him%20and%20her%20mobile%20banner.png?raw=true" media="(max-width: 767px)">
+<link rel="preload" as="image" href="https://github.com/Growftofficial/Ashraf-s-Salon-Website/blob/main/her%20and%20him%20website%20banner.png?raw=true" media="(min-width: 768px)">
 
 <style>
 :root{
@@ -28,7 +31,7 @@
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:'Lato',sans-serif;color:var(--brown);background:var(--off);-webkit-font-smoothing:antialiased;line-height:1.5;padding-bottom:3rem}
 @media(min-width:768px){body{padding-bottom:0}}
-img{max-width:100%;display:block;height:auto}
+img{max-width:100%;display:block;height:auto;font-style:italic}
 button{font-family:inherit;cursor:pointer;border:0;background:none}
 a{text-decoration:none;color:inherit}
 ul{list-style:none}
@@ -117,8 +120,8 @@ ul{list-style:none}
 .btn-pink:hover{background:var(--brown)}
 .btn-brown{background:var(--brown);color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:.05em;transition:background .2s}
 .btn-brown:hover{background:var(--pink)}
-.card{background:#fff;border:1px solid rgba(74,59,50,.1);box-shadow:0 1px 3px rgba(0,0,0,.06);transition:transform .3s,box-shadow .3s;will-change:transform}
-.card:hover{transform:translateY(-4px) translateZ(0);box-shadow:0 12px 24px rgba(0,0,0,.08)}
+.card{background:#fff;border:1px solid rgba(74,59,50,.1);box-shadow:0 1px 3px rgba(0,0,0,.06);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,.08)}
 
 /* HEADER */
 header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.08)}
@@ -140,21 +143,14 @@ header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 4px rgb
 @media(min-width:640px){.hero{height:20rem}}
 @media(min-width:768px){.hero{height:450px}}
 @media(min-width:1024px){.hero{height:600px}}
-.slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;z-index:0;will-change:opacity;backface-visibility:hidden}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;z-index:0}
 .slide.active{opacity:1;z-index:10}
 .slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.slide-content{opacity:0;transform:translateY(10px);transition:all .5s ease-out .2s;will-change:transform,opacity}
-.slide.active .slide-content{opacity:1;transform:translateY(0) translateZ(0)}
+.slide-content{opacity:0;transform:translateY(10px);transition:all .5s ease-out .2s}
+.slide.active .slide-content{opacity:1;transform:none}
 @media(max-width:767px){.slide.active .slide-content{opacity:1!important;transform:none!important}}
 .hide-md{display:block}.show-md{display:none}
 @media(min-width:768px){.hide-md{display:none}.show-md{display:block}}
-.badge-top{position:absolute;top:1rem;right:1rem;z-index:30;background:var(--pink);color:#fff;font-size:.75rem;font-weight:700;padding:.25rem .75rem;border-radius:9999px;text-transform:uppercase;letter-spacing:.05em;box-shadow:0 4px 6px rgba(0,0,0,.1);border:1px solid rgba(255,255,255,.5)}
-.claim-btn{position:absolute;bottom:1rem;right:1rem;z-index:20;display:inline-flex;align-items:center;background:var(--pink);color:#fff;padding:.5rem 1rem;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;border:2px solid var(--pink);box-shadow:0 10px 15px rgba(0,0,0,.15);transition:background .2s}
-.claim-btn:hover{background:#fff;color:var(--pink)}
-@media(min-width:768px){
-  .claim-btn{top:50%;bottom:auto;right:3rem;transform:translateY(-50%);padding:1rem 2rem;font-size:1.125rem}
-}
-@media(min-width:1024px){.claim-btn{right:6rem}}
 .tap-zone{position:absolute;top:0;bottom:0;width:50%;z-index:15;cursor:pointer}
 .tap-zone.left{left:0}
 .tap-zone.right{right:0}
@@ -176,20 +172,15 @@ header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 4px rgb
 .sec-sub{font-size:.875rem;opacity:.7;font-weight:700;max-width:42rem;margin:0 auto}
 @media(min-width:768px){.sec-sub{font-size:1rem}}
 
-/* SCROLL REVEAL (GPU Accelerated) */
-.reveal, .reveal-left, .reveal-right, .reveal-zoom {
-  will-change: transform, opacity;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
-.reveal.in{opacity:1;transform:translateZ(0)}
-.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
-.reveal-left.in{opacity:1;transform:translateZ(0)}
-.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
-.reveal-right.in{opacity:1;transform:translateZ(0)}
-.reveal-zoom{opacity:0;transform:scale(.95);transition:opacity .6s ease,transform .6s ease}
-.reveal-zoom.in{opacity:1;transform:scale(1) translateZ(0)}
+/* SCROLL REVEAL (Optimized) */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.reveal-left{opacity:0;transform:translateX(-30px);transition:opacity .7s ease,transform .7s ease}
+.reveal-left.in{opacity:1;transform:none}
+.reveal-right{opacity:0;transform:translateX(30px);transition:opacity .7s ease,transform .7s ease}
+.reveal-right.in{opacity:1;transform:none}
+.reveal-zoom{opacity:0;transform:scale(.95);transition:opacity .5s ease,transform .5s ease}
+.reveal-zoom.in{opacity:1;transform:none}
 .d-1{transition-delay:.1s}.d-2{transition-delay:.2s}.d-3{transition-delay:.3s}.d-4{transition-delay:.4s}.d-5{transition-delay:.5s}
 
 /* FORM / MODAL */
@@ -202,8 +193,8 @@ label{display:block;font-size:.75rem;font-weight:700;text-transform:uppercase;le
 #lead-modal{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;background:rgba(74,59,50,.9);opacity:0;pointer-events:none;transition:opacity .3s;padding:1rem}
 @media(min-width:640px){#lead-modal{padding:1.5rem}}
 #lead-modal.active{opacity:1;pointer-events:auto}
-#lead-modal .modal-box{background:#fff;border-top:8px solid var(--pink);width:100%;max-width:56rem;box-shadow:0 20px 25px rgba(0,0,0,.15);position:relative;max-height:90vh;overflow-y:auto;border-radius:0 0 .5rem .5rem;transform:scale(.95);transition:transform .3s;will-change:transform}
-#lead-modal.active .modal-box{transform:scale(1) translateZ(0)}
+#lead-modal .modal-box{background:#fff;border-top:8px solid var(--pink);width:100%;max-width:56rem;box-shadow:0 20px 25px rgba(0,0,0,.15);position:relative;max-height:90vh;overflow-y:auto;border-radius:0 0 .5rem .5rem;transform:scale(.95);transition:transform .3s}
+#lead-modal.active .modal-box{transform:scale(1)}
 .modal-close{position:absolute;top:.75rem;right:.75rem;z-index:10;width:2rem;height:2rem;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.8);border-radius:9999px;color:var(--brown);transition:color .2s}
 @media(min-width:768px){.modal-close{top:1rem;right:1rem}}
 .modal-close:hover{color:var(--pink)}
@@ -298,19 +289,12 @@ label{display:block;font-size:.75rem;font-weight:700;text-transform:uppercase;le
 <!-- HERO -->
 <section id="offer-slider" class="hero">
   <div class="slide active">
-    <div class="badge-top">Limited Time Offer</div>
-    <img src="https://github.com/Growftofficial/My-tool-growft/blob/main/ashraf%20mobile%20screen%20first%20banner.png?raw=true" alt="Luxury Salon" width="800" height="600" class="hide-md" fetchpriority="high" decoding="sync">
-    <img src="https://raw.githubusercontent.com/Growftofficial/Ashraf-s-Salon-Website/refs/heads/main/1770pc.png" alt="Luxury Salon" width="1600" height="600" class="show-md" fetchpriority="high" decoding="sync">
-    <div style="position:absolute;inset:0;z-index:20;pointer-events:none">
-      <button onclick="openModal()" class="claim-btn slide-content" style="pointer-events:auto">Claim Offer <svg class="w-4 h-4 ml-2"><use href="#i-arrow"/></svg></button>
-    </div>
+    <img src="https://github.com/Growftofficial/Ashraf-s-Salon-Website/blob/main/him%20and%20her%20mobile%20banner.png?raw=true" alt="Luxury Salon" width="800" height="600" class="hide-md" fetchpriority="high" decoding="sync">
+    <img src="https://github.com/Growftofficial/Ashraf-s-Salon-Website/blob/main/her%20and%20him%20website%20banner.png?raw=true" alt="Luxury Salon" width="1600" height="600" class="show-md" fetchpriority="high" decoding="sync">
   </div>
   <div class="slide">
-    <img src="https://github.com/Growftofficial/Ashraf-s-Salon-Website/blob/main/her%20and%20him%20website%20banner.png?raw=true" alt="Keratin" width="800" height="600" class="hide-md" loading="lazy" decoding="async">
-    <img src="https://github.com/roservicexpertcom-prog/website/blob/main/Luxury%20Keratin%20Treatment%20Salon%20Banner.png?raw=true" alt="Keratin" width="1600" height="600" class="show-md" loading="lazy" decoding="async">
-    <div style="position:absolute;inset:0;z-index:20;pointer-events:none">
-      <button onclick="openModal()" class="claim-btn slide-content" style="pointer-events:auto">Claim Offer <svg class="w-4 h-4 ml-2"><use href="#i-arrow"/></svg></button>
-    </div>
+    <img src="https://github.com/Growftofficial/Ashraf-s-Salon-Website/blob/main/Glossy%20Keratin%20Hair%20Treatment%20Offer.png?raw=true" alt="Keratin" width="800" height="600" class="hide-md" loading="lazy" decoding="async">
+    <img src="https://github.com/Growftofficial/Ashraf-s-Salon-Website/blob/main/1770pc.png?raw=true" alt="Keratin" width="1600" height="600" class="show-md" loading="lazy" decoding="async">
   </div>
   <button class="tap-zone left" id="zL" aria-label="Previous"></button>
   <button class="tap-zone right" id="zR" aria-label="Next"></button>
@@ -327,7 +311,7 @@ label{display:block;font-size:.75rem;font-weight:700;text-transform:uppercase;le
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="reveal d-1 card" style="position:relative;overflow:hidden;aspect-ratio:4/5">
         <div style="position:absolute;top:1rem;left:0;background:var(--pink);color:#fff;padding:.25rem 1rem;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;z-index:10">Limited Time</div>
-        <img src="https://github.com/Growftofficial/My-tool-growft/blob/main/ashraf%20web%20diwali%20offer.png?raw=true" alt="Offer" width="600" height="750" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        <img src="https://github.com/Growftofficial/Ashraf-s-Salon-Website/blob/main/offes%20section%20first%20image.png?raw=true" alt="Offer" width="600" height="750" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
         <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(74,59,50,.9),rgba(74,59,50,.2),transparent);display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem;z-index:10;pointer-events:none">
           <button onclick="openModal()" class="btn-pink" style="padding:.625rem 1.25rem;font-size:.875rem;border-radius:.25rem;width:max-content;pointer-events:auto">Book Now <svg class="w-4 h-4 ml-2"><use href="#i-arrow"/></svg></button>
         </div>
@@ -342,7 +326,7 @@ label{display:block;font-size:.75rem;font-weight:700;text-transform:uppercase;le
         </div>
       </div>
       <div class="reveal d-3 card" style="position:relative;overflow:hidden;aspect-ratio:4/5">
-        <img src="https://github.com/Growftofficial/My-tool-growft/blob/main/ashraf%20diwali%20combo.png?raw=true" alt="Combo" width="600" height="750" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        <img src="https://github.com/Growftofficial/Ashraf-s-Salon-Website/blob/main/offer%20section%20second%20image%20pillgrim%20treatment.png?raw=true" alt="Combo" width="600" height="750" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
         <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(74,59,50,.9),rgba(74,59,50,.2),transparent);display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem;z-index:10;pointer-events:none">
           <button onclick="openModal()" class="btn-pink" style="padding:.625rem 1.25rem;font-size:.875rem;border-radius:.25rem;width:max-content;pointer-events:auto">Book Now <svg class="w-4 h-4 ml-2"><use href="#i-arrow"/></svg></button>
         </div>
@@ -466,44 +450,82 @@ label{display:block;font-size:.75rem;font-weight:700;text-transform:uppercase;le
       <h2 class="sec-title" style="color:#fff">Find Us Near You</h2><div class="divider"></div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
       <div class="reveal-left card" style="background:#fff;color:var(--brown);padding:1.5rem;position:relative">
-        <div style="position:absolute;top:0;left:0;background:var(--pink);padding:.25rem 1rem;font-family:'Playfair Display',serif;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.1em;font-size:.875rem">Pune</div>
-        <ul style="margin-top:2rem;display:flex;flex-direction:column;gap:1.5rem">
-          <li style="display:flex;align-items:flex-start;padding-bottom:1.25rem;border-bottom:1px solid rgba(74,59,50,.1)">
-            <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color:var(--pink);margin-top:.25rem"><use href="#i-map"/></svg>
-            <div style="flex:1"><h4 style="font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Kharadi</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">1st Floor Shop, The Space Business Complex, 207, Grant Rd, Rajaram Patil Nagar</p><a href="https://maps.app.goo.gl/EEfcL7DUrGmiCmHw8" target="_blank" rel="noopener" class="btn-pink" style="display:inline-flex;align-items:center;padding:.5rem 1rem;font-size:10px;letter-spacing:.1em">Get Direction <svg class="w-3 h-3 ml-2"><use href="#i-loc"/></svg></a></div>
-          </li>
-          <li style="display:flex;align-items:flex-start">
-            <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color:var(--pink);margin-top:.25rem"><use href="#i-map"/></svg>
-            <div style="flex:1"><h4 style="font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Wakad</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">Unit 102, Utkarsh Chowk, next to Haldiram, Shankar Kalat Nagar</p><a href="https://maps.app.goo.gl/ojUV5qE9UR5z8pBX8" target="_blank" rel="noopener" class="btn-pink" style="display:inline-flex;align-items:center;padding:.5rem 1rem;font-size:10px;letter-spacing:.1em">Get Direction <svg class="w-3 h-3 ml-2"><use href="#i-loc"/></svg></a></div>
-          </li>
-        </ul>
-      </div>
-      <div class="reveal-right card d-2" style="background:#fff;color:var(--brown);padding:1.5rem;position:relative">
         <div style="position:absolute;top:0;left:0;background:var(--brown-d);padding:.25rem 1rem;font-family:'Playfair Display',serif;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.1em;font-size:.875rem">Mumbai</div>
         <ul style="margin-top:2rem;display:flex;flex-direction:column;gap:1.5rem">
           <li style="display:flex;align-items:flex-start;padding-bottom:1.25rem;border-bottom:1px solid rgba(74,59,50,.1)">
             <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color:var(--brown-d);margin-top:.25rem"><use href="#i-map"/></svg>
-            <div style="flex:1"><h4 style="font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Thane</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">4th floor, Shop 401, Platinum Square, Ghantali Devi Rd, Naupada</p><a href="https://maps.app.goo.gl/vSZ6PBwY6ENxz4hWA" target="_blank" rel="noopener" class="btn-pink" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Get Direction <svg class="w-3 h-3 ml-2"><use href="#i-loc"/></svg></a></div>
+            <div style="flex:1"><h4 style="font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Thane</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">4th floor, Shop 401, Platinum Square, Ghantali Devi Rd, Naupada</p>
+              <div style="display:flex;gap:0.5rem">
+                <a href="https://maps.app.goo.gl/vSZ6PBwY6ENxz4hWA" target="_blank" rel="noopener" class="btn-pink" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Get Direction <svg class="w-3 h-3 ml-2"><use href="#i-loc"/></svg></a>
+                <a href="tel:+918976359391" class="btn-brown" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Call <svg class="w-3 h-3 ml-2"><use href="#i-phone"/></svg></a>
+              </div>
+            </div>
           </li>
           <li style="display:flex;align-items:flex-start;padding-bottom:1.25rem;border-bottom:1px solid rgba(74,59,50,.1)">
             <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color:var(--brown-d);margin-top:.25rem"><use href="#i-map"/></svg>
-            <div style="flex:1"><h4 style="font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Powai</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">Galleria Shopping Mall, Shop 121-122, Hiranandani Gardens</p><a href="https://maps.app.goo.gl/PCAhDGteAeLFnqRe9" target="_blank" rel="noopener" class="btn-pink" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Get Direction <svg class="w-3 h-3 ml-2"><use href="#i-loc"/></svg></a></div>
+            <div style="flex:1"><h4 style="font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Powai</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">Galleria Shopping Mall, Shop 121-122, Hiranandani Gardens</p>
+              <div style="display:flex;gap:0.5rem">
+                <a href="https://maps.app.goo.gl/PCAhDGteAeLFnqRe9" target="_blank" rel="noopener" class="btn-pink" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Get Direction <svg class="w-3 h-3 ml-2"><use href="#i-loc"/></svg></a>
+                <a href="tel:+919004080403" class="btn-brown" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Call <svg class="w-3 h-3 ml-2"><use href="#i-phone"/></svg></a>
+              </div>
+            </div>
           </li>
           <li style="display:flex;align-items:flex-start;padding-bottom:1.25rem;border-bottom:1px solid rgba(74,59,50,.1)">
             <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color:var(--brown-d);margin-top:.25rem"><use href="#i-map"/></svg>
-            <div style="flex:1"><h4 style="font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Kalyan Khadakpada</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">Shop 108, Tulsi Park, Khadakpada Cir, Beturkar Pada</p><a href="https://maps.app.goo.gl/6TVcxbZypPN9L5rJA" target="_blank" rel="noopener" class="btn-pink" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Get Direction <svg class="w-3 h-3 ml-2"><use href="#i-loc"/></svg></a></div>
+            <div style="flex:1"><h4 style="font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Kalyan Khadakpada</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">Shop 108, Tulsi Park, Khadakpada Cir, Beturkar Pada</p>
+              <div style="display:flex;gap:0.5rem">
+                <a href="https://maps.app.goo.gl/6TVcxbZypPN9L5rJA" target="_blank" rel="noopener" class="btn-pink" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Get Direction <svg class="w-3 h-3 ml-2"><use href="#i-loc"/></svg></a>
+                <a href="tel:+919004965331" class="btn-brown" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Call <svg class="w-3 h-3 ml-2"><use href="#i-phone"/></svg></a>
+              </div>
+            </div>
           </li>
           <li style="display:flex;align-items:flex-start;padding-bottom:1.25rem;border-bottom:1px solid rgba(74,59,50,.1)">
             <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color:var(--brown-d);margin-top:.25rem"><use href="#i-map"/></svg>
-            <div style="flex:1"><h4 style="font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Marol</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">Shop 1, Nand Dham Industrial Estate, Marol Maroshi Rd</p><a href="https://maps.app.goo.gl/cVscPEZMXSAsPY9N8" target="_blank" rel="noopener" class="btn-pink" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Get Direction <svg class="w-3 h-3 ml-2"><use href="#i-loc"/></svg></a></div>
+            <div style="flex:1"><h4 style="font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Marol</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">Shop 1, Nand Dham Industrial Estate, Marol Maroshi Rd</p>
+              <div style="display:flex;gap:0.5rem">
+                <a href="https://maps.app.goo.gl/cVscPEZMXSAsPY9N8" target="_blank" rel="noopener" class="btn-pink" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Get Direction <svg class="w-3 h-3 ml-2"><use href="#i-loc"/></svg></a>
+                <a href="tel:+918104730772" class="btn-brown" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Call <svg class="w-3 h-3 ml-2"><use href="#i-phone"/></svg></a>
+              </div>
+            </div>
           </li>
           <li style="display:flex;align-items:flex-start">
             <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color:var(--brown-d);margin-top:.25rem"><use href="#i-map"/></svg>
-            <div style="flex:1"><h4 style="font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Mulund</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">Premium Salon, Mulund West</p><button onclick="openModal()" class="btn-pink" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Book Now</button></div>
+            <div style="flex:1"><h4 style="font-size:.875rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Mulund</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">Premium Salon, Mulund West</p>
+              <div style="display:flex;gap:0.5rem">
+                <button onclick="openModal()" class="btn-pink" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Book Now</button>
+                <a href="tel:+918928258351" class="btn-brown" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Call <svg class="w-3 h-3 ml-2"><use href="#i-phone"/></svg></a>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
+
+      <div class="reveal-right card d-2" style="background:#fff;color:var(--brown);padding:1.5rem;position:relative">
+        <div style="position:absolute;top:0;left:0;background:var(--pink);padding:.25rem 1rem;font-family:'Playfair Display',serif;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.1em;font-size:.875rem">Pune</div>
+        <ul style="margin-top:2rem;display:flex;flex-direction:column;gap:1.5rem">
+          <li style="display:flex;align-items:flex-start;padding-bottom:1.25rem;border-bottom:1px solid rgba(74,59,50,.1)">
+            <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color:var(--pink);margin-top:.25rem"><use href="#i-map"/></svg>
+            <div style="flex:1"><h4 style="font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Kharadi</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">1st Floor Shop, The Space Business Complex, 207, Grant Rd, Rajaram Patil Nagar</p>
+              <div style="display:flex;gap:0.5rem">
+                <a href="https://maps.app.goo.gl/EEfcL7DUrGmiCmHw8" target="_blank" rel="noopener" class="btn-pink" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Get Direction <svg class="w-3 h-3 ml-2"><use href="#i-loc"/></svg></a>
+                <a href="tel:+919137180659" class="btn-brown" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Call <svg class="w-3 h-3 ml-2"><use href="#i-phone"/></svg></a>
+              </div>
+            </div>
+          </li>
+          <li style="display:flex;align-items:flex-start">
+            <svg class="w-5 h-5 mr-3 flex-shrink-0" style="color:var(--pink);margin-top:.25rem"><use href="#i-map"/></svg>
+            <div style="flex:1"><h4 style="font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.25rem">Wakad</h4><p style="opacity:.7;font-size:.75rem;margin-bottom:.75rem">Unit 102, Utkarsh Chowk, next to Haldiram, Shankar Kalat Nagar</p>
+              <div style="display:flex;gap:0.5rem">
+                <a href="https://maps.app.goo.gl/ojUV5qE9UR5z8pBX8" target="_blank" rel="noopener" class="btn-pink" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Get Direction <svg class="w-3 h-3 ml-2"><use href="#i-loc"/></svg></a>
+                <a href="tel:+917715059583" class="btn-brown" style="display:inline-flex;align-items:center;padding:.375rem .75rem;font-size:10px;letter-spacing:.1em">Call <svg class="w-3 h-3 ml-2"><use href="#i-phone"/></svg></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </section>
@@ -647,7 +669,7 @@ if (promoVideo && 'IntersectionObserver' in window) {
   videoObserver.observe(promoVideo);
 }
 
-// Form - Branch details updated to include Mulund and Khadakpada
+// Form
 const branches={"Pune":["Kharadi","Wakad"],"Mumbai":["Thane","Powai","Kalyan Khadakpada","Marol","Mulund"]};
 
 async function handleSubmit(e){
@@ -710,14 +732,16 @@ if('IntersectionObserver' in window){
   document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-zoom').forEach(el=>el.classList.add('in'));
 }
 
-// Auto-open modal on first scroll
+// Auto-open modal on first scroll (Passive for smooth scrolling)
 let modalTriggered = false;
-window.addEventListener('scroll', () => {
+const onScrollModal = () => {
   if (!modalTriggered && window.scrollY > 300) {
     openModal();
     modalTriggered = true;
+    window.removeEventListener('scroll', onScrollModal); // Remove immediately to save memory
   }
-});
+};
+window.addEventListener('scroll', onScrollModal, { passive: true });
 </script>
 </body>
 </html>
